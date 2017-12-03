@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.sptpc.matrimony.persistence.MemberMapper">
+
+  <cache />
+  <!-- 根据用户id得到用户 -->
+  <select id="getUserByID" parameterType="Member" resultType="Member">
+  
+  </select>
+  
+  <!-- 检查用户合法性 -->
+  <select id="getMemberCount" parameterType="Member" resultType="Integer">
+  
+  </select>
+  
+  <!-- 检查管理员合法性 -->
+  <select select id="getAdminCount" parameterType="Admin" resultType="Integer" >
+  
+  
+  </select>
+  <!-- 根据id得到管理员 -->
+  <select select id="getAdminByID" parameterType="Admin" resultType="Admin">
+  
+  
+  </select>
+  
+  <!-- 添加用户信息 -->
+  <insert id="insertMember" parameterType="Regist">
+  
+  </insert>
+  
+   <!-- 添加管理员信息 -->
+  <insert id="insertAdmin" parameterType="Regist">
+  
+  </insert>
+  
+  
+  
+  
+
+  
+  
+
+</mapper>
